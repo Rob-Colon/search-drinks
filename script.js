@@ -1,6 +1,9 @@
 let result = document.getElementById("result");
 let searchBtn = document.getElementById("search-btn");
 let url = "https://thecocktaildb.com/api/json/v1/1/search.php?s=";
+
+
+// actual item info
 let getInfo = () => {
     let userInp = document.getElementById("user-inp").value;
     if (userInp.length == 0) {
@@ -53,6 +56,7 @@ let getInfo = () => {
             });
     }
 };
+
 window.addEventListener("load", getInfo);
 searchBtn.addEventListener("click", getInfo);
 document.querySelector("#user-inp").addEventListener
